@@ -1,0 +1,57 @@
+# ==========================================
+# Environment Variables & Secrets
+# ==========================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ==========================================
+# Python & Django
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+backend/venv/
+backend/env/
+venv/
+env/
+ENV/
+*.sqlite3
+*.sqlite3-journal
+backend/db.sqlite3
+backend/media/
+backend/staticfiles/
+
+# ==========================================
+# Node, React & Frontend Build
+# ==========================================
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+dist-ssr/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ==========================================
+# Power BI Custom Visual SDK
+# ==========================================
+.tmp/
+powerbi-ai-assistant-visual/node_modules/
+powerbi-ai-assistant-visual/dist/
+powerbi-ai-assistant-visual/.tmp/
+*.pbiviz.json.tmp
+
+# ==========================================
+# IDE & System Files
+# ==========================================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
