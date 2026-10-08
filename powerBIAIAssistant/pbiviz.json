@@ -1,0 +1,26 @@
+{
+  "visual": {
+    "name": "powerBIAIAssistant",
+    "displayName": "AI Business Assistant",
+    "guid": "powerBIAIAssistant47649BEC858444269DB04B241B115C87",
+    "visualClassName": "Visual",
+    "version": "1.0.0.0",
+    "description": "AI-Powered Business Analytics Assistant Visual for Power BI Reports",
+    "supportUrl": "https://github.com/kirubanithi-debug/Power-Bi-AI",
+    "gitHubUrl": "https://github.com/kirubanithi-debug/Power-Bi-AI"
+  },
+  "apiVersion": "5.11.1",
+  "author": {
+    "name": "Kirubanithi Analytics",
+    "email": "analyst@acme.com"
+  },
+  "assets": {
+    "icon": "assets/icon.png"
+  },
+  "externalJS": null,
+  "style": "style/visual.less",
+  "capabilities": "capabilities.json",
+  "dependencies": null,
+  "stringResources": [],
+  "version": "1.0.0.0"
+}
