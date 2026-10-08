@@ -13,25 +13,26 @@ export class Visual implements IVisual {
 
     constructor(options: VisualConstructorOptions) {
         this.target = options.element;
+        this.target.innerHTML = "";
         this.target.style.overflow = "hidden";
         this.target.style.width = "100%";
         this.target.style.height = "100%";
+        this.target.style.display = "flex";
+        this.target.style.flexDirection = "column";
 
         // Create embedded iframe pointing to AI Assistant
         this.iframe = document.createElement("iframe");
         this.iframe.style.width = "100%";
         this.iframe.style.height = "100%";
         this.iframe.style.border = "none";
-        
-        // Point iframe to running AI Assistant app
-        this.iframe.src = "http://localhost:5173/ai-assistant";
+        this.iframe.setAttribute("src", "http://localhost:5173/ai-assistant");
+        this.iframe.setAttribute("allow", "cross-origin-isolated");
 
         this.target.appendChild(this.iframe);
     }
 
     public update(options: VisualUpdateOptions) {
-        // Adjust container dimensions on Power BI report resize
-        if (this.target && options) {
+        if (this.target && options && options.viewport) {
             this.target.style.width = `${options.viewport.width}px`;
             this.target.style.height = `${options.viewport.height}px`;
         }
