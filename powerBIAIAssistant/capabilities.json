@@ -1,6 +1,22 @@
 {
-    "dataRoles": [],
-    "dataViewMappings": [],
+    "dataRoles": [
+        {
+            "displayName": "Drag Any Field Here (Optional)",
+            "name": "category",
+            "kind": "Grouping"
+        }
+    ],
+    "dataViewMappings": [
+        {
+            "categorical": {
+                "categories": {
+                    "for": {
+                        "in": "category"
+                    }
+                }
+            }
+        }
+    ],
     "privileges": [
         {
             "name": "WebAccess",
